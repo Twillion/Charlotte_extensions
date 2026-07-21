@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A GitHub Pages catalog for Charlotte Engine extensions, forked from GDevelop."
+    />
+    <title>Charlotte Engine Extensions</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Charlotte Engine Extensions home">
+        <span class="brand-mark" aria-hidden="true">CE</span>
+        <span>Charlotte Engine Extensions</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#extensions">Extensions</a>
+        <a href="#install">Install</a>
+        <a href="#submit">Submit</a>
+        <a href="https://github.com/Twillion/Charllote_Engine">Fork</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">GDevelop fork extension catalog</p>
+          <h1 id="hero-title">Add fork-specific features to your GDevelop projects.</h1>
+          <p>
+            Browse extensions and engine modules built around the Charlotte Engine fork,
+            then install or contribute them with the same export-and-share workflow used by
+            GDevelop extensions.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#extensions">Browse extensions</a>
+            <a class="button secondary" href="#submit">Share an extension</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Extension workflow preview">
+          <div class="visual-toolbar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="visual-grid">
+            <article>
+              <strong>Search</strong>
+              <span>Lighting, 3D, tools</span>
+            </article>
+            <article>
+              <strong>Install</strong>
+              <span>Import JSON or package</span>
+            </article>
+            <article>
+              <strong>Build</strong>
+              <span>Use in events</span>
+            </article>
+            <article>
+              <strong>Share</strong>
+              <span>Submit a pull request</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Catalog summary">
+        <div>
+          <span class="metric">4</span>
+          <span>starter listings</span>
+        </div>
+        <div>
+          <span class="metric">MIT</span>
+          <span>extension-friendly license</span>
+        </div>
+        <div>
+          <span class="metric">Pages</span>
+          <span>static GitHub hosting</span>
+        </div>
+      </section>
+
+      <section class="section" id="extensions" aria-labelledby="extensions-title">
+        <div class="section-heading">
+          <p class="eyebrow">Discover</p>
+          <h2 id="extensions-title">Featured fork extensions</h2>
+          <p>
+            These starter cards are organized like an extension store: each entry has a
+            category, status, install note, and author-facing metadata.
+          </p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter extensions">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="rendering">Rendering</button>
+          <button class="filter-button" type="button" data-filter="3d">3D</button>
+          <button class="filter-button" type="button" data-filter="tools">Tools</button>
+        </div>
+
+        <div class="extension-grid" id="extension-grid"></div>
+      </section>
+
+      <section class="process" id="install" aria-labelledby="install-title">
+        <div class="section-heading">
+          <p class="eyebrow">Install</p>
+          <h2 id="install-title">Use extensions in the fork</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-number">1</span>
+            <div>
+              <h3>Download the extension file</h3>
+              <p>Grab the exported JSON file or package from the extension listing.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">2</span>
+            <div>
+              <h3>Open your project in Charlotte Engine</h3>
+              <p>Use the fork build that includes the matching runtime support.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">3</span>
+            <div>
+              <h3>Import and test</h3>
+              <p>Add the extension through project extensions, then verify it in preview.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="submit" id="submit" aria-labelledby="submit-title">
+        <div>
+          <p class="eyebrow">Contribute</p>
+          <h2 id="submit-title">Share an extension with this catalog</h2>
+          <p>
+            Export the extension from GDevelop, include a short README, and open a pull
+            request with a catalog entry. Keep names, descriptions, tags, and compatibility
+            notes complete so users know what they are installing.
+          </p>
+        </div>
+        <a class="button primary" href="https://github.com/Twillion/Charllote_Engine">Open fork repo</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>Charlotte Engine Extensions</span>
+      <span>Inspired by GDevelop's extension discovery and sharing workflow.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
